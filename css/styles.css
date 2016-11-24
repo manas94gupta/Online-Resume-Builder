@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body,
 div,
 ul,
@@ -19,15 +23,55 @@ h6 {
     font-weight: bold;
 }
 
+.flex-box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/**********Header Elements Styling**********/
+
+header {
+    min-height: 200px;
+    width: 100%;
+}
+
+.biopic {
+    width: 25%;
+}
+
+.biopic img {
+    width: 100%;
+    min-height: 200px;
+}
+
+.name-role {
+    width: 75%;
+    min-height: 200px;
+    -webkit-print-color-adjust: exact;
+    background-color: #6d6d6d;
+    text-align: center;
+    color: #ffffff;
+    display: table;
+}
+
+.vertical-align {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.name-role hr {
+    width: 40%;
+}
+
+.name,
+.role {
+    color: #ffffff;
+}
+
 /**********Aside Elements Styling**********/
 
 aside {
     width: 25%;
-}
-
-.biopic {
-    width: 100%;
-    margin: auto;
 }
 
 img {
@@ -40,14 +84,9 @@ img {
     margin: 0 auto;
 }
 
-.name {
-    font-size: 2em;
-}
-
-.role {
-}
-
-.personal, .contact, .links {
+.personal,
+.contact,
+.links {
     padding-top: 10px;
 }
 
@@ -67,4 +106,17 @@ td {
 
 tr {
     /*border-bottom: 1pt solid #434343;*/
+}
+
+/*****************************************/
+
+/**********Main Elements Styling**********/
+
+main {
+    width: 75%;
+}
+
+.main-data {
+    width: 80%;
+    margin: 0 auto;
 }
