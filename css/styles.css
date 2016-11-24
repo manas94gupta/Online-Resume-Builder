@@ -31,7 +31,7 @@ h6 {
 /**********Header Elements Styling**********/
 
 header {
-    min-height: 200px;
+    height: 204px;
     width: 100%;
 }
 
@@ -41,14 +41,17 @@ header {
 
 .biopic img {
     width: 100%;
-    min-height: 200px;
+    height: 204px;
 }
 
 .name-role {
     width: 75%;
-    min-height: 200px;
+    height: 204px;
     -webkit-print-color-adjust: exact;
-    background-color: #6d6d6d;
+    /*background-color: #6d6d6d;*/
+    background: #232526;
+    background: -webkit-linear-gradient(to left, #232526 , #414345);
+    background: linear-gradient(to left, #232526 , #414345);
     text-align: center;
     color: #ffffff;
     display: table;
@@ -60,23 +63,24 @@ header {
 }
 
 .name-role hr {
-    width: 40%;
+    width: 50%;
 }
 
 .name,
 .role {
     color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    letter-spacing: 7px;
+    text-transform: uppercase;
 }
+
+/*****************************************/
 
 /**********Aside Elements Styling**********/
 
 aside {
     width: 25%;
-}
-
-img {
-    width: 100%;
-    max-height: 200px;
 }
 
 .aside-data {
@@ -114,9 +118,28 @@ tr {
 
 main {
     width: 75%;
+    -webkit-print-color-adjust: exact;
+    background-color: #eeeeee;
 }
 
 .main-data {
     width: 80%;
     margin: 0 auto;
+    padding: 20px 0;
+}
+
+.heading {
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 2px;
+    color: #ffffff;
+    background-color: #6d6d6d;
+    padding: 2px 15px;
+}
+
+.profile-entry,
+.work-entry,
+.project-entry,
+.education-entry {
+    margin: 20px 0;
 }
