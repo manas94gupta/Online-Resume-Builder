@@ -134,12 +134,40 @@ main {
     border-radius: 2px;
     color: #ffffff;
     background-color: #6d6d6d;
-    padding: 2px 15px;
+    padding: 2px 15px 3px 15px;
 }
 
 .profile-entry,
+.skill-entry,
 .work-entry,
 .project-entry,
 .education-entry {
     margin: 20px 0;
 }
+
+.job-title,
+.project-title,
+.degree {
+    font-weight: bold;
+}
+
+.date,
+.location {
+    float: right;
+}
+
+.description {
+    padding: 8px 0;
+}
+
+ul {
+    margin-left: 25px;
+}
+
+li {
+    width: 50%;
+    padding-right: 40px;
+    overflow-wrap: break-word;
+}
+
+/*****************************************/
