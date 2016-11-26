@@ -28,6 +28,23 @@ h6 {
     flex-wrap: wrap;
 }
 
+.fixed {
+    position: fixed;
+    top: 0;
+}
+
+.main-left {
+    margin-left: 25%;
+}
+
+.main-left1 {
+    margin-left: 30%;
+}
+
+.main-left2 {
+    margin-left: 35%;
+}
+
 /**********Header Elements Styling**********/
 
 header {
