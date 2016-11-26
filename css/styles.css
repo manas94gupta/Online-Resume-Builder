@@ -305,6 +305,19 @@ li {
     .name-role hr {
         width: 70%;
     }
+
+    .personal {
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    .contact {
+        margin-bottom: 40px;
+    }
+
+    .contact {
+        margin-top: 350px;
+    }
 }
 
 /*****************************************/
