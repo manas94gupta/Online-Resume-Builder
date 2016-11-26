@@ -189,6 +189,82 @@ li {
 
 /**************Media Queries**************/
 
+/*for larger screens container will have fixed width and centered*/
+@media screen and (min-width: 1401px) {
+    .container {
+        width: 1400px;
+        margin: 0 auto;
+    }
+}
 
+@media screen and (min-width: 850px) and (max-width: 1023px) {
+    .biopic,
+    aside {
+        width: 30%;
+    }
+
+    .name-role,
+    main {
+        width: 70%;
+    }
+
+    .name-role hr {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 849px) {
+    .biopic,
+    aside {
+        width: 35%;
+    }
+
+    .name-role,
+    main {
+        width: 65%;
+    }
+
+    .name-role hr {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 699px) {
+    .biopic {
+        display: none;
+    }
+
+    .name-role,
+    aside,
+    main {
+        width: 100%;
+    }
+
+    .name-role hr {
+        width: 90%;
+    }
+
+    th {
+        width: 120px;
+    }
+
+    .date,
+    .location {
+        float: none;
+    }
+
+    .date {
+        font-size: 0.7em;
+    }
+
+    .location {
+        font-size: 0.9em;
+        font-style: italic;
+    }
+
+    li {
+        width: 100%;
+    }
+}
 
 /*****************************************/
