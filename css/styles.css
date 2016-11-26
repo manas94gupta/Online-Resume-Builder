@@ -171,6 +171,10 @@ main {
     float: right;
 }
 
+.location {
+    font-style: italic;
+}
+
 .description {
     padding: 8px 0;
 }
@@ -259,11 +263,26 @@ li {
 
     .location {
         font-size: 0.9em;
-        font-style: italic;
     }
 
     li {
         width: 100%;
+    }
+}
+
+@media print {
+    .biopic,
+    aside {
+        width: 33%;
+    }
+
+    .name-role,
+    main {
+        width: 67%;
+    }
+
+    .name-role hr {
+        width: 70%;
     }
 }
 
