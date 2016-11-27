@@ -77,3 +77,56 @@ var HTMLlinksTwitterCell = '<td><span class="boldText"><i class="fa fa-twitter" 
 
 var HTMLlinksWebsite = '<tr id="linksWebsite"></tr>';
 var HTMLlinksWebsiteCell = '<td><span class="boldText"><i class="fa fa-globe" aria-hidden="true"></i>%data%</span></td>';
+
+
+
+// Main Elements
+
+// Main Profile Elements
+var HTMLprofile = '<div class="profile"></div>';
+
+var HTMLprofileHeading = '<span class="heading">Profile</span>';
+var HTMLprofileEntry = '<div class="profile-entry"></div>';
+
+var HTMLprofileDescription = '<p>%data%</p>';
+
+// Main Skills Elements
+var HTMLskills = '<div class="skills"></div>';
+
+var HTMLskillsHeading = '<span class="heading">Skills</span>';
+var HTMLskillEntry = '<div class="skill-entry"></div>';
+
+var HTMLskillList = '<ul class="flex-box"></ul>';
+var HTMLskillElement = '<li>%data%</li>';
+
+// Main Experience Elements
+var HTMLworkex = '<div class="workex"></div>';
+
+var HTMLworkexHeading = '<span class="heading">Experience</span>';
+var HTMLworkEntry = '<div class="work-entry"></div>';
+
+var HTMLworkDate = '<div class="date">%data%</div>';
+var HTMLworkTitle = '<div class="job-title">%data%</div>';
+var HTMLworkLocation = '<div class="location">%data%</div>';
+var HTMLworkCompany = '<div class="company">%data%</div>';
+var HTMLworkDescription = '<p class="description">%data%</p>';
+
+// Main Projects Elements
+var HTMLprojects = '<div class="projects"></div>';
+
+var HTMLprojectsHeading = '<span class="heading">Projects</span>';
+var HTMLprojectEntry = '<div class="project-entry"></div>';
+
+var HTMLprojectDate = '<div class="date">%data%</div>';
+var HTMLprojectTitle  = '<div class="project-title">%data%</div>';
+var HTMLprojectDescription = '<p class="description">%data%</p>';
+
+// Main Education Elements
+var HTMLeducation = '<div class="education"></div>';
+
+var HTMLeducationHeading = '<span class="heading">Education</span>';
+var HTMLeducationEntry = '<div class="education-entry"></div>';
+
+var HTMLeducationDate = '<div class="date">%data%</div>';
+var HTMLeducationDegree = '<div class="degree">%data%</div>';
+var HTMLeducationCollege = '<div class="college">%data%</div>';
