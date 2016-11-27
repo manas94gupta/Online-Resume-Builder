@@ -12,9 +12,10 @@ the index.html.
 // Header Elements
 var HTMLbiopic = '<div class="biopic"><img src="%data%" alt="Bio Pic" /></div>';
 
-var HTMLnamerole = '<div class="name-role"><div class="vertical-align"><hr id="namestart"><hr></div></div>';
-var HTMLheadName = '<h1 class="name">%data%</h1>';
-var HTMLheadRole = '<h5 class="role">%data%</h5>';
+var HTMLnamerole = '<div class="name-role"><div class="vertical-align"></div></div>';
+
+var HTMLheadName = '<hr><h1 class="name">%data%</h1>';
+var HTMLheadRole = '<h5 class="role">%data%</h5><hr>';
 
 
 // Aside Elements

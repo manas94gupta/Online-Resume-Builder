@@ -2,7 +2,7 @@
 var header = {
     "name": "Walter White",
     "role": "Chemical Engineer",
-    "biopic": "biopic.jpg"
+    "biopic": "images/biopic.jpg"
 };
 
 // Personal object
