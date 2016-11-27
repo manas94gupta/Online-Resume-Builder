@@ -44,3 +44,36 @@ var HTMLpersonalNationalityCell = '<td>%data%</td>';
 var HTMLpersonalLanguages = '<tr id="personalLanguages"></tr>';
 var HTMLpersonalLanguagesHead = '<th>Languages</th>';
 var HTMLpersonalLanguagesCell = '<td>%data%</td>';
+
+// Aside Contact Elements
+var HTMLcontact = '<div class="contact"></div>';
+var HTMLcontactHeading = '<h3>Contact</h3>';
+
+var HTMLcontactTable = '<table id="contactTable"></table>';
+
+var HTMLcontactMobile = '<tr id="contactMobile"></tr>';
+var HTMLcontactMobileCell = '<td><i class="fa fa-phone" aria-hidden="true"></i>%data%</td>';
+
+var HTMLcontactMail = '<tr id="contactMail"></tr>';
+var HTMLcontactMailCell = '<td><i class="fa fa-envelope" aria-hidden="true"></i>%data%</td>';
+
+var HTMLcontactAddress = '<tr id="contactAddress"></tr>';
+var HTMLcontactAddressCell = '<td><i class="fa fa-map-marker" aria-hidden="true"></i>%data%</td>';
+
+// Aside Links Elements
+var HTMLlinks = '<div class="links"></div>';
+var HTMLlinksHeading = '<h3>Links</h3>';
+
+var HTMLlinksTable = '<table id="linksTable"></table>';
+
+var HTMLlinksGithub = '<tr id="linksGithub"></tr>';
+var HTMLlinksGithubCell = '<td><span class="boldText"><i class="fa fa-github" aria-hidden="true"></i>github.com/</span>%data%</td>';
+
+var HTMLlinksLinkedin = '<tr id="linksLinkedin"></tr>';
+var HTMLlinksLinkedinCell = '<td><span class="boldText"><i class="fa fa-linkedin" aria-hidden="true"></i>linkedin.com/</span>%data%</td>';
+
+var HTMLlinksTwitter = '<tr id="linksTwitter"></tr>';
+var HTMLlinksTwitterCell = '<td><span class="boldText"><i class="fa fa-twitter" aria-hidden="true"></i>twitter.com/</span>%data%</td>';
+
+var HTMLlinksWebsite = '<tr id="linksWebsite"></tr>';
+var HTMLlinksWebsiteCell = '<td><span class="boldText"><i class="fa fa-globe" aria-hidden="true"></i>%data%</span></td>';
