@@ -7,7 +7,9 @@ It creates a simple yet modern and responsive design.
 
 ## Sample
 
-Your resume will look something like this:
+Your resume will look something like this:      
+
+
 ![Sample Resume](https://github.com/manas94gupta/Online-Resume-Builder/blob/master/images/OnlineResumeSample.JPG)
 
 ## How To Use
