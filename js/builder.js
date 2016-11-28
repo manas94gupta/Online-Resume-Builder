@@ -106,7 +106,58 @@ skills.display = function() {
     });
 };
 
+// Experience Display Function
+experience.display = function() {
+    $(".main-data").append(HTMLworkex);
 
+    $(".workex").append(HTMLworkexHeading);
+
+    experience.jobs.forEach(function(job) {
+        $(".workex").append(HTMLworkEntry);
+
+        var formattedWorkDate = HTMLworkDate.replace("%data%", job.date);
+        var formattedWorkTitle = HTMLworkTitle.replace("%data%", job.title);
+        var formattedWorkLocation = HTMLworkLocation.replace("%data%", job.location);
+        var formattedWorkCompany = HTMLworkCompany.replace("%data%", job.company);
+        var formattedWorkDescription = HTMLworkDescription.replace("%data%", job.description);
+        $(".work-entry:last").append(formattedWorkDate, formattedWorkTitle, formattedWorkLocation, formattedWorkCompany, formattedWorkDescription);
+    });
+};
+
+// Projects Display Function
+projects.display = function() {
+    $(".main-data").append(HTMLprojects);
+
+    $(".projects").append(HTMLprojectsHeading);
+
+    projects.projects.forEach(function(project) {
+        $(".projects").append(HTMLprojectEntry);
+
+        var formattedProjectDate = HTMLprojectDate.replace("%data%", project.date);
+        var formattedProjectTitle = HTMLprojectTitle.replace("%data%", project.title);
+        var formattedProjectDescription = HTMLprojectDescription.replace("%data%", project.description);
+        $(".project-entry:last").append(formattedProjectDate, formattedProjectTitle, formattedProjectDescription);
+    });
+};
+
+// Education Display function
+education.display = function() {
+    $(".main-data").append(HTMLeducation);
+
+    $(".education").append(HTMLeducationHeading);
+
+    education.schools.forEach(function(school) {
+        $(".education").append(HTMLeducationEntry);
+
+        var formattedEducationDate = HTMLeducationDate.replace("%data%", school.date);
+        var formattedEducationDegree = HTMLeducationDegree.replace("%data%", school.degree);
+        var formattedEducationCollege = HTMLeducationCollege.replace("%data%", school.college);
+        $(".education-entry:last").append(formattedEducationDate, formattedEducationDegree, formattedEducationCollege);
+    });
+};
+
+
+// Initialisation of all display functions
 $(document).ready(function() {
     header.display();
     personal.display();
@@ -114,4 +165,7 @@ $(document).ready(function() {
     links.display();
     profile.display();
     skills.display();
+    experience.display();
+    projects.display();
+    education.display();
 });

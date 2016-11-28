@@ -65,12 +65,12 @@ var experience = {
 var projects = {
     "projects": [
         {
-            "date": "1981",
+            "date": "November, 1981",
             "title": "Proton Radiography",
             "description": "Lorem ipsum dolor sit amet, pro ut eirmod fabellas, has ea aliquam disputationi moderatius quaerendum per. No periculis democritum concludaturque pri, et sonet moderatius quaerendum per, eum ea mollis albucius mnesarchum. Cu splendide voluptatum sed. Cu duo persius assueverit, ut sit elit persius euismod."
         },
         {
-            "date": "2007",
+            "date": "June, 2007",
             "title": "Blue Meth",
             "description": "Lorem ipsum dolor sit amet, pro ut eirmod fabellas, has ea aliquam disputationi moderatius quaerendum per. No periculis democritum concludaturque pri, et sonet moderatius quaerendum per, eum ea mollis albucius mnesarchum. Cu splendide voluptatum sed. Cu duo persius assueverit, ut sit elit persius euismod."
         }
