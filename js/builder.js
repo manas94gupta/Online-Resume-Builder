@@ -1,3 +1,15 @@
+// This file contains the display functions to display the info provided by
+// the user in data.js in the html file.
+
+// It adds a display function to header, personal, contacts, links, profile,
+// skills, experience, projects and education objects to display their
+// respective info.
+
+// The display functions takes info from their respective objects and add them
+// to the formatted HTML strings in helper.js and then append them to the
+// index.html in their respective positions.
+
+// Header Display Function
 header.display = function() {
     var formattedBiopic = HTMLbiopic.replace("%data%", header.biopic);
     $("header").append(formattedBiopic, HTMLnamerole);
@@ -7,6 +19,74 @@ header.display = function() {
     $(".vertical-align").append(formattedHeadName, formattedHeadRole);
 };
 
+// Personal Display Function
+personal.display = function() {
+    $(".aside-data").append(HTMLpersonal);
+
+    $(".personal").append(HTMLpersonalHeading, HTMLpersonalTable);
+
+    $("#personalTable").append(HTMLpersonalName, HTMLpersonalSex, HTMLpersonalBirth, HTMLpersonalNationality, HTMLpersonalLanguages);
+
+    var formattedPersonalNameCell = HTMLpersonalNameCell.replace("%data%", personal.name);
+    $("#personalName").append(HTMLpersonalNameHead, formattedPersonalNameCell);
+
+    var formattedPersonalSexCell = HTMLpersonalSexCell.replace("%data%", personal.sex);
+    $("#personalSex").append(HTMLpersonalSexHead, formattedPersonalSexCell);
+
+    var formattedPersonalBirthCell = HTMLpersonalBirthCell.replace("%data%", personal.dateofbirth);
+    $("#personalBirth").append(HTMLpersonalBirthHead, formattedPersonalBirthCell);
+
+    var formattedPersonalNationalityCell = HTMLpersonalNationalityCell.replace("%data%", personal.nationality);
+    $("#personalNationality").append(HTMLpersonalNationalityHead, formattedPersonalNationalityCell);
+
+    var formattedPersonalLanguagesCell = HTMLpersonalLanguagesCell.replace("%data%", personal.languages);
+    $("#personalLanguages").append(HTMLpersonalLanguagesHead, formattedPersonalLanguagesCell);
+};
+
+// Contacts Display Function
+contacts.display = function() {
+    $(".aside-data").append(HTMLcontact);
+
+    $(".contact").append(HTMLcontactHeading, HTMLcontactTable);
+
+    $("#contactTable").append(HTMLcontactMobile, HTMLcontactMail, HTMLcontactAddress);
+
+    var formattedContactMobileCell = HTMLcontactMobileCell.replace("%data%", contacts.mobile);
+    $("#contactMobile").append(formattedContactMobileCell);
+
+    var formattedContactMailCell = HTMLcontactMailCell.replace("%data%", contacts.email);
+    $("#contactMail").append(formattedContactMailCell);
+
+    var formattedContactAddressCell = HTMLcontactAddressCell.replace("%data%", contacts.address);
+    $("#contactAddress").append(formattedContactAddressCell);
+};
+
+// Links Display Function
+links.display = function() {
+    $(".aside-data").append(HTMLlinks);
+
+    $(".links").append(HTMLlinksHeading, HTMLlinksTable);
+
+    $("#linksTable").append(HTMLlinksGithub, HTMLlinksLinkedin, HTMLlinksTwitter, HTMLlinksWebsite);
+
+    var formattedLinksGithub = HTMLlinksGithubCell.replace("%data%", links.github);
+    $("#linksGithub").append(formattedLinksGithub);
+
+    var formattedLinksLinkedin = HTMLlinksLinkedinCell.replace("%data%", links.linkedin);
+    $("#linksLinkedin").append(formattedLinksLinkedin);
+
+    var formattedLinksTwitter = HTMLlinksTwitterCell.replace("%data%", links.twitter);
+    $("#linksTwitter").append(formattedLinksTwitter);
+
+    var formattedLinksWebsite = HTMLlinksWebsiteCell.replace("%data%", links.website);
+    $("#linksWebsite").append(formattedLinksWebsite);
+};
+
+
+
 $(document).ready(function() {
     header.display();
+    personal.display();
+    contacts.display();
+    links.display();
 });
