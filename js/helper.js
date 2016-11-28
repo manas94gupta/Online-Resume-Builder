@@ -97,7 +97,7 @@ var HTMLskills = '<div class="skills"></div>';
 var HTMLskillsHeading = '<span class="heading">Skills</span>';
 var HTMLskillEntry = '<div class="skill-entry"></div>';
 
-var HTMLskillList = '<ul class="flex-box"></ul>';
+var HTMLskillList = '<ul class="flex-box" id="skillList"></ul>';
 var HTMLskillElement = '<li>%data%</li>';
 
 // Main Experience Elements

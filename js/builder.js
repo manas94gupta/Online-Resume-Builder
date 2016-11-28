@@ -82,6 +82,29 @@ links.display = function() {
     $("#linksWebsite").append(formattedLinksWebsite);
 };
 
+// Profile Display Function
+profile.display = function() {
+    $(".main-data").append(HTMLprofile);
+
+    $(".profile").append(HTMLprofileHeading, HTMLprofileEntry);
+
+    var formattedProfileDescription = HTMLprofileDescription.replace("%data%", profile.profile);
+    $(".profile-entry").append(formattedProfileDescription);
+};
+
+// Skills Display Function
+skills.display = function() {
+    $(".main-data").append(HTMLskills);
+
+    $(".skills").append(HTMLskillsHeading, HTMLskillEntry);
+
+    $(".skill-entry").append(HTMLskillList);
+
+    skills.skills.forEach(function(skill) {
+        var formattedSkillElement = HTMLskillElement.replace("%data%", skill);
+        $("#skillList").append(formattedSkillElement);
+    });
+};
 
 
 $(document).ready(function() {
@@ -89,4 +112,6 @@ $(document).ready(function() {
     personal.display();
     contacts.display();
     links.display();
+    profile.display();
+    skills.display();
 });
