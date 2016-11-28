@@ -156,6 +156,17 @@ education.display = function() {
     });
 };
 
+function biopicToggle() {
+    // if user hasn't specified an image then the .biopic div wil not be displayed
+    // and .name-role div will take 100% width inside the header.
+    var imgsrc = $("img").attr("src");
+    var biopic = $(".biopic");
+    var namerole = $(".name-role");
+    if(imgsrc === "#") {
+        biopic.css({"display": "none"});
+        namerole.css({"width": "100%"});
+    }
+};
 
 // Initialisation of all display functions
 $(document).ready(function() {
@@ -168,4 +179,6 @@ $(document).ready(function() {
     experience.display();
     projects.display();
     education.display();
+
+    biopicToggle();
 });
