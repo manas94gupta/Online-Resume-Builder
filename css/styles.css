@@ -323,6 +323,12 @@ li {
     .contact {
         margin-top: 350px;
     }
+
+    .work-entry,
+    .project-entry,
+    .education-entry {
+        page-break-inside: avoid;
+    }
 }
 
 /*****************************************/
