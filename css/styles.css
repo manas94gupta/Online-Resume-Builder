@@ -28,6 +28,11 @@ h6 {
     flex-wrap: wrap;
 }
 
+a {
+    text-decoration: none;
+    color: #434343;
+}
+
 /**********Header Elements Styling**********/
 
 header {

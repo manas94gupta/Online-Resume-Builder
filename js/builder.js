@@ -69,16 +69,16 @@ links.display = function() {
 
     $("#linksTable").append(HTMLlinksGithub, HTMLlinksLinkedin, HTMLlinksTwitter, HTMLlinksWebsite);
 
-    var formattedLinksGithub = HTMLlinksGithubCell.replace("%data%", links.github);
+    var formattedLinksGithub = HTMLlinksGithubCell.replace("%data%", links.github).replace("#", links.githubUrl);
     $("#linksGithub").append(formattedLinksGithub);
 
-    var formattedLinksLinkedin = HTMLlinksLinkedinCell.replace("%data%", links.linkedin);
+    var formattedLinksLinkedin = HTMLlinksLinkedinCell.replace("%data%", links.linkedin).replace("#", links.linkedinUrl);
     $("#linksLinkedin").append(formattedLinksLinkedin);
 
-    var formattedLinksTwitter = HTMLlinksTwitterCell.replace("%data%", links.twitter);
+    var formattedLinksTwitter = HTMLlinksTwitterCell.replace("%data%", links.twitter).replace("#", links.twitterUrl);
     $("#linksTwitter").append(formattedLinksTwitter);
 
-    var formattedLinksWebsite = HTMLlinksWebsiteCell.replace("%data%", links.website);
+    var formattedLinksWebsite = HTMLlinksWebsiteCell.replace("%data%", links.website).replace("#", links.websiteUrl);
     $("#linksWebsite").append(formattedLinksWebsite);
 };
 

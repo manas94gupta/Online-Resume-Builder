@@ -60,12 +60,30 @@ var contacts = {
 var links = {
     // Replace walterwhite within quotes with your github user name
     "github": "walterwhite",
+    // Replace # within quotes with your github profile url.
+    // For example if your github profile url is https://github.com/walterwhite
+    // then the line would look like
+    // "githubUrl": "https://github.com/walterwhite"
+    // If you don't want to link then leave as it is.
+    "githubUrl": "#",
     // Replace walterwhite within quotes with your linkedin user name
     "linkedin": "walterwhite",
+    // Replace # within quotes with your linkedin profile url.
+    // Refer to github url example
+    // If you don't want to link then leave as it is.
+    "linkedinUrl": "#",
     // Replace heisenberg within quotes with your twitter user name
     "twitter": "heisenberg",
+    // Replace # within quotes with your twitter account url.
+    // Refer to github url example
+    // If you don't want to link then leave as it is.
+    "twitterUrl": "#",
     // Replace heisenberg.com within quotes with your own personal website link
-    "website": "heisenberg.com"
+    "website": "heisenberg.com",
+    // Replace # within quotes with your website url.
+    // Refer to github url example
+    // If you don't want to link then leave as it is.
+    "websiteUrl": "#"
 };
 
 // Profile object

@@ -68,16 +68,16 @@ var HTMLlinksHeading = '<h3>Links</h3>';
 var HTMLlinksTable = '<table id="linksTable"></table>';
 
 var HTMLlinksGithub = '<tr id="linksGithub"></tr>';
-var HTMLlinksGithubCell = '<td><span class="boldText"><i class="fa fa-github" aria-hidden="true"></i>github.com/</span>%data%</td>';
+var HTMLlinksGithubCell = '<td><a target="_blank" href="#"><span class="boldText"><i class="fa fa-github" aria-hidden="true"></i>github.com/</span>%data%</a></td>';
 
 var HTMLlinksLinkedin = '<tr id="linksLinkedin"></tr>';
-var HTMLlinksLinkedinCell = '<td><span class="boldText"><i class="fa fa-linkedin" aria-hidden="true"></i>linkedin.com/</span>%data%</td>';
+var HTMLlinksLinkedinCell = '<td><a target="_blank" href="#"><span class="boldText"><i class="fa fa-linkedin" aria-hidden="true"></i>linkedin.com/</span>%data%</a></td>';
 
 var HTMLlinksTwitter = '<tr id="linksTwitter"></tr>';
-var HTMLlinksTwitterCell = '<td><span class="boldText"><i class="fa fa-twitter" aria-hidden="true"></i>twitter.com/</span>%data%</td>';
+var HTMLlinksTwitterCell = '<td><a target="_blank" href="#"><span class="boldText"><i class="fa fa-twitter" aria-hidden="true"></i>twitter.com/</span>%data%</a></td>';
 
 var HTMLlinksWebsite = '<tr id="linksWebsite"></tr>';
-var HTMLlinksWebsiteCell = '<td><span class="boldText"><i class="fa fa-globe" aria-hidden="true"></i>%data%</span></td>';
+var HTMLlinksWebsiteCell = '<td><a target="_blank" href="#"><span class="boldText"><i class="fa fa-globe" aria-hidden="true"></i>%data%</span></a></td>'; target="_blank"
 
 
 
